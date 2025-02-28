@@ -2,129 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/uikit.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/uikit.js"></script>
-    <script src="js/uikit-icons.js"></script>
-
-    <title>Portfolio</title>
+    <title>John Doe | Computer Scientist</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Navigation Bar -->
-    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
-    </div>
-    <div class="uk-navbar-right">
+    <header>
+        <div class="logo">&lt;/&gt;</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+    <main>
+        <section id="home" class="home">
+            <h1>Dhananjay Khulbe</h1>
+            <div class="subtitle">Computer Scientist & Developer</div>
+            <p>Aspiring Computer Scientist, with proficiency in robotics, app design, data visualization, and algorithm development.</p>
+            <a href="resume.pdf" class="btn" id="resumeBtn" target="_blank">View Resume</a>
+        </section>
 
-        </ul>
+        <section id="about" class="about">
+            <h1>About Me</h1>
+            <p>I'm a computer scientist with expertise in robotics, app design, data visualization, and algorithm development. With a Ph.D. from [University Name], I've spent the last 3 years building my skills.</p>
+            <p>My research interests include:</p>
+            <p>
+            - Distributed systems architecture<br>
+            - Algorithm optimization<br>
+            - Graph related Databases<br>
+            - App design</p>
 
-    </div>
-</nav>
-<!-- Navigation Bar Ends  -->
+        </section>
 
-<!-- Navigation Bar Mobile -->
-<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">Dhananjay Khulbe</a>
-    </div>
-    <div class="uk-navbar-right">
+        <section id="projects" class="projects">
+            <h1>Projects</h1>
+            
+            <div class="project-card">
+                <h3 class="project-title">STTAR</h3>
+                <p>An app to streamline operations for 200+ students and 70+ teachers in the peer based tutoring program at Lynbrook High School.</p>
+                <a href="#" class="btn">See Project</a>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Anti-Tipping Code</h3>
+                <p>A dynamically updating calculator to prevent robot tipping for FRC team 846 during the 2025 season.</p>
+                <a href="#" class="btn">See Project</a>
+            </div>
+            
+            <!-- <div class="project-card">
+                <h3 class="project-title">Quantum Computing Simulator</h3>
+                <p>Educational tool that simulates quantum gates and circuits to demonstrate quantum computing principles.</p>
+                <a href="#" class="btn">See Project</a>
+            </div> -->
+        </section>
 
-        <ul class="uk-navbar-nav uk-light">
-            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+        <section id="contact" class="contact">
+            <h1>Contact</h1>
+            <p>Feel free to reach out to me for collaboration opportunities, research discussions, or just to say hello.</p>
+            <p>Email: dkhulbe115@gmail.com<br>
+            GitHub: github.com/DhananjayKhulbe<br>
+        </section>
+    </main>
 
-        </ul>
-
-    </div>
-</nav>
-<!-- Change This -->
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
-            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
-            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-            <li class="uk-active"><a href="mailto:">dkhulbe115@gmail.com</a></li> <!--- change to ur email-->
-
-        </ul>
-
-
-
-
-    </div>
-</div>
-
-<!-- Navigation Bar Mobile Ends -->
-<!-- Home -->
-<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Dhananjay Khulbe, a computer scientist</h1>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
-
-
-</section>
-
-<!-- Home Ends -->
-<br>
-
-
-<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
-
-<!-- About Me -->
-<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
-<!-- Change here to ur paragraph -->
-<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Im a high school sophomore studying out of Lynbrook High School. Relevent coursework includes: Ap Calculus, Ap Computer Sceince, Ap Physics 1. I am the Test and Drive lead for FRC team 846, The Funky Monkeys. I have experience with C++, Python, Java, React, Flutter.</p>
-<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
-
-<!-- About Me Ends -->
-
-
-
-
-</section>
-
-<!-- Projects Section -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-<p class="uk-margin-xlarge-left">Projects that i've been working on</p>
-
-<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-    <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>STTAR</h4>
-        <p>I've been co-developing an app for my schools peer-based tutoring program, the STTAR program.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="">
-            <span uk-icon="icon: link">
-            </span> Website Link </a>
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Resume</h2>
+            <div style="margin-top: 1.5rem;">
+                <h3>Education</h3>
+                <p>Ph.D. in Computer Science<br>University of Technology, 2018-2022</p>
+                <p>M.S. in Computer Science<br>State University, 2016-2018</p>
+                <p>B.S. in Computer Science<br>National University, 2012-2016</p>
+                
+                <h3 style="margin-top: 1.5rem;">Experience</h3>
+                <p>Senior Research Scientist<br>Tech Research Labs, 2022-Present</p>
+                <p>Research Assistant<br>University of Technology, 2018-2022</p>
+                <p>Software Engineering Intern<br>Major Tech Company, Summer 2017</p>
+                
+                <h3 style="margin-top: 1.5rem;">Skills</h3>
+                <p>Languages: Python, C++, Rust, JavaScript, Haskell<br>
+                Technologies: TensorFlow, PyTorch, Docker, Kubernetes<br>
+                Areas: Machine Learning, Distributed Systems, Algorithm Design</p>
+                
+                <h3 style="margin-top: 1.5rem;">Publications</h3>
+                <p>"Novel Approaches to Distributed Learning in Resource-Constrained Environments"<br>
+                Journal of Computer Science Research, 2023</p>
+                <p>"Optimizing Graph Algorithms for Large-Scale Network Analysis"<br>
+                International Conference on Computing Systems, 2021</p>
+            </div>
         </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>Project Name</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="uk-button-text uk-text-decoration-none" href="">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div></div>
+    </div>
 
+    <footer>
+        <p>&copy; 2025 Dhananjay Khulbe. All rights reserved.</p>
+    </footer>
 
-
-    <br>
-
-
-</section>
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-</div>
-<!-- Projects Section Ends -->
-    
+    <script src="script.js"></script>
 </body>
 </html>
