@@ -1,7 +1,7 @@
 :root {
     --bg-color: #121212;
     --text-color: #e0e0e0;
-    --accent-color: #d3011c;
+    --accent-color: #ffd700;
     --secondary-bg: #1e1e1e;
     --transition: all 0.3s ease;
 }
@@ -117,7 +117,7 @@ p {
 }
 
 .btn:hover {
-    background: rgba(100, 255, 218, 0.1);
+    background: #fff44f;
 }
 
 .about, .contact, .projects {
