@@ -1,384 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <title>Personal Portfolio Template</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Template css Files -->
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
 
-  <!-- Live Style Switcher - Demo Only -->
-  <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css">
-  <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
-  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+    <title>Portfolio</title>
 </head>
-
 <body>
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader">
-
+<!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
     </div>
-  </div>
-  <!-- Preloader End -->
+    <div class="uk-navbar-right">
 
-  <!-- Main Container -->
-  <div class="main-container">
-    <!-- Aside -->
-    <div class="aside">
-      <!-- Nav Toggler Btn -->
-      <div class="nav-toggler">
-        <span></span>
-      </div>
-      <div class="aside-inner">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="#">Upvesh</a>
-        </div>
-        <!-- Nav -->
-        <ul class="nav">
-          <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-          <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-          <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
-          <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-          <li><a href="#blog"><i class="fa fa-envelope"></i> Blog</a></li>
-          <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+
         </ul>
-        <!-- Copyright -->
-        <div class="copyright-text">
-          &copy; 2020 The WebShala Template
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Dhananjay Khulbe</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+            <li class="uk-active"><a href="mailto:">dkhulbe115@gmail.com</a></li> <!--- change to ur email-->
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Dhananjay Khulbe, a computer scientist</h1>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+
+
+</section>
+
+<!-- Home Ends -->
+<br>
+
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Im a high school sophomore studying out of Lynbrook High School. Relevent coursework includes: Ap Calculus, Ap Computer Sceince, Ap Physics 1. I am the Test and Drive lead for FRC team 846, The Funky Monkeys. I have experience with C++, Python, Java, React, Flutter.</p>
+<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
+<p class="uk-margin-xlarge-left">Projects that i've been working on</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <!-- Change all of this to ur projects -->
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>STTAR</h4>
+        <p>I've been co-developing an app for my schools peer-based tutoring program, the STTAR program.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="">
+            <span uk-icon="icon: link">
+            </span> Website Link </a>
         </div>
-      </div>
-    </div>
-    <!-- Aside End -->
-    <!-- Main Content -->
-    <div class="main-content">
-
-      <!-- Home Section -->
-      <section class="home section active" id="home">
-        <div class="container">
-          <div class="intro">
-            <img src="images/lufft.jpg" alt="profile" class="shadow-dark">
-            <h1>Upvesh Kumar</h1>
-            <span class="iTyped"></span>
-            <div class="social-links">
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Home Section End -->
-
-      <!-- About Section -->
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <div class="about-text padd-15">
-                  <h3>I'm Dhananjay Khulbe and <span>Software Engineer</span></h3>
-                  <p>Hi! My name is Dhananjay Khulbe. I am a Computer Scientist, and I'm very passionate and dedicated
-                    to my work, with 3 years of Experience. </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="personal-info padd-15">
-                  <div class="row">
-                    <!-- <div class="info-item padd-15">
-                      <p>Birthday : <span>5 June 1992</span></p>
-                    </div> -->
-                    <div class="info-item padd-15">
-                      <p>Age : <span>16</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Website : <span>www.domain.com</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Email : <span>dkhulbe115@@gmail.com</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>School : <span>Lynbrook High School</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Phone : <span>+408 549 4328</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>State : <span>California</span></p>
-                    </div>
-                    <!-- <div class="info-item padd-15">
-                      <p>Freelance : <span>Available</span></p>
-                    </div> -->
-                  </div>
-                  <div class="row">
-                    <div class="buttons padd-15">
-                      <a href="#" class="btn">Download Cv</a>
-                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills padd-15">
-                  <div class="row">
-                    <div class="skill-item padd-15">
-                      <h5>C++</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 76%;"></div>
-                        <div class="skill-porcent">
-                          76%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Python</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 90%;"></div>
-                        <div class="skill-porcent">
-                          90%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Java</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 80%;"></div>
-                        <div class="skill-porcent">
-                          80%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Javascript</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 60%;"></div>
-                        <div class="skill-porcent">
-                          60%
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="education padd-15">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - Present</h6>
-                          <h4 class="timeline-title">High School</h4>
-                          <p class="timeline-text">Currently a sophmore at Lynbrook High School. Relevant coursework includes: Ap Calculus, Ap Computer Science A, Ap Physics 1.</p>
-                        </div>
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <!-- <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2011 - 2013</h6>
-                          <h4 class="timeline-title">Studied At Delhi University</h4>
-                          <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                            nisi semper, et elementum lorem ornare.</p>
-                        </div> -->
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <!-- <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2008 - 2011</h6>
-                          <h4 class="timeline-title">Bachelor Degree</h4>
-                          <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                            nisi semper, et elementum lorem ornare.</p>
-                        </div> -->
-                        <!-- timeline Item End -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="experience padd-15">
-                  <h3 class="title">Experience</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - Present</h6>
-                          <h4 class="timeline-title">Test and Drive Lead</h4>
-                          <p class="timeline-text">Currently the Test and Drive Lead for FRC team 846, The Funky Monkeys. Gained experience robotic testing, C++, Python, Git.</p>
-                        </div>
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2011 - 2013</h6>
-                          <h4 class="timeline-title">Frontend Developer</h4>
-                          <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                            nisi semper, et elementum lorem ornare.</p>
-                        </div>
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <!-- <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2008 - 2011</h6>
-                          <h4 class="timeline-title">Graphic Designer</h4>
-                          <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                            nisi semper, et elementum lorem ornare.</p>
-                        </div> -->
-                        <!-- timeline Item End -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Section End -->
-
-      <!-- Service Section -->
-      <!-- Service Section End -->
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Project Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+            </div></div>
 
 
-      <!-- Blog Section End -->
 
-      <!-- Contact Section -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- contact-info-item  -->
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <i class="fa fa-phone"></i>
-                <h4>Call Us On</h4>
-                <p>+408 549 4328</p>
-              </div>
-            </div>
-            <!-- contact-info-item end -->
+    <br>
 
-            <!-- contact-info-item end -->
-            <!-- contact-info-item  -->
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <i class="fa fa-envelope"></i>
-                <h4>Email</h4>
-                <p>dkhulbe115@gmail.com</p>
-              </div>
-            </div>
-            <!-- contact-info-item end -->
-          </div>
 
-          <!-- Contact Form -->
-          <div class="row">
-            <form action="#" class="contact-form padd-15">
-              <div class="row">
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control" placeholder="Name*">
-                  </div>
-                </div>
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="email" name="" class="form-control" placeholder="Email*">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control" placeholder="Subject*">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <textarea class="form-control" name="" placeholder="Your Message..."></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 padd-15">
-                  <button type="submit" class="btn">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- Contact Form End -->
-        </div>
-      </section>
-      <!-- Contact Section End -->
-
-    </div>
-    <!-- Main Content End -->
-  </div>
-  <!-- Main Container End -->
-
-  <!-- Lightbox -->
-  <div class="lightbox">
-    <div class="lightbox-content">
-      <div class="lightbox-close">&times;</div>
-      <img src="" alt="" onclick="nextItem()" class="lightbox-img">
-      <div class="lightbox-caption">
-        <div class="caption-text"></div>
-        <div class="caption-counter"></div>
-      </div>
-    </div>
-    <div class="lightbox-controls">
-      <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-      <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
-    </div>
-  </div>
-  <!-- Lightbox End -->
-
-  <!-- Live Style Switcher - Demo Only -->
-  <div class="style-switcher">
-    <div class="toggle-style-switcher">
-      <i class="fa fa-cog fa-spin"></i>
-    </div>
-    <h5>Style Switcher</h5>
-    <ul>
-      <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
-      <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
-      <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
-      <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
-      <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
-    </ul>
-    <h5>Body Skin</h5>
-    <label>
-      <input type="radio" class="body-skin" name="body-skin" value="light" checked="true"> Light
-    </label>
-    <label>
-      <input type="radio" class="body-skin" name="body-skin" value="dark"> Dark
-    </label>
-  </div>
-  <!-- Live Style Switcher - Demo Only End -->
-
-  <!-- Plugins -->
-  <script src="js/ityped.min.js"></script>
-  <!-- Template js -->
-  <script src="js/script.js"></script>
-  <!-- Live Style Js - Demo Only -->
-  <script src="js/styleSwitcher.js"></script>
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+</div>
+<!-- Projects Section Ends -->
+    
 </body>
-
 </html>
