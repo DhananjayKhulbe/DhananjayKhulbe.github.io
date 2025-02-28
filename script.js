@@ -19,10 +19,12 @@ function showSection(sectionId) {
 navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
+
         const sectionId = this.getAttribute('data-section');
         showSection(sectionId);
         // Update URL fragment
         window.location.hash = sectionId;
+        window.scrollTo({ top: 0, behavior: 'instant' });
     });
 });
 
@@ -34,6 +36,7 @@ window.addEventListener('load', function() {
     } else {
         showSection('home');
     }
+    window.scrollTo({ top: 0, behavior: 'instant' });
 });
 
 // Resume modal functionality
@@ -53,4 +56,5 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = 'none';
     }
+    window.scrollTo({ top: 0, behavior: 'instant' });
 }
